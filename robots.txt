@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap : http://yonghole.github.io/sitemap.xml
+Sitemap : https://yonghole.github.io/sitemap.xml
