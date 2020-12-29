@@ -97,7 +97,7 @@ author:
   avatar           : "/assets/face.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Ho will be a developer"
   location         : "Somewhere"
-  email            : ""
+ # email            : ""
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
