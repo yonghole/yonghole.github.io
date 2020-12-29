@@ -152,7 +152,8 @@ Training을 위해서, 우리는 DOC3D dataset을 생성했다.
     <img width="419" alt="dewarpNet_1" src="https://user-images.githubusercontent.com/55180768/103264621-95d8f580-49ee-11eb-939c-7549f194292c.png">
 
 
-   ![기존의 데이터셋](../img/dewarpNet/dewarpNet_2.png)
+  <img width="204" alt="dewarpNet_2" src="https://user-images.githubusercontent.com/55180768/103264677-c6b92a80-49ee-11eb-95f0-c9ade70481f0.png">
+
 
 
     ### Capturing Deformed Document 3D Shape
@@ -168,17 +169,21 @@ Training을 위해서, 우리는 DOC3D dataset을 생성했다.
 
     등이 필요하다. 
 
- ![How to get mesh with depth camera](../img/dewarpNet/dewarpNet_3.png)
+ <img width="197" alt="dewarpNet_3" src="https://user-images.githubusercontent.com/55180768/103264689-d173bf80-49ee-11eb-9493-c22bb0221e8e.png"><img width="197" alt="dewarpNet_3" src="https://user-images.githubusercontent.com/55180768/103264689-d173bf80-49ee-11eb-9493-c22bb0221e8e.png">
+
+
 
     (사용된 카메라 모델 : Intel RealSense D415 Depth Camera)
 
      카메라 가격
- ![ 카메라 가격](../img/dewarpNet/dewarpNet_camera.png)
+ <img width="1000" alt="dewarpNet_camera" src="https://user-images.githubusercontent.com/55180768/103264718-e6e8e980-49ee-11eb-8e94-4aa0c79d3a9e.png">
+
          
          
     Depth 카메라를 통해, 우리는 다음과 같은 형태로 변형된 문서의 point cloud를 획득할 수 있다. 
 
- ![doc3d dataset 획득 과정](../img/dewarpNet/dewarpNet_4.png)
+ <img width="887" alt="dewarpNet_4" src="https://user-images.githubusercontent.com/55180768/103264705-dcc6eb00-49ee-11eb-9bbc-3a38f04149f2.png">
+
 
 Point Cloud로부터 우리는 ball pivoting algorithm을 통해 mesh를 생성할 수 있다. 
 
@@ -222,7 +227,7 @@ Mesh 에 적용된 Texture는 실제 세계의 document image를 통해 획득�
 
 ## DewarpNet
 
- ![DewarpNet Framework](../img/dewarpNet/dewarpNet_5.png)
+<img width="896" alt="dewarpNet_5" src="https://user-images.githubusercontent.com/55180768/103264771-fa945000-49ee-11eb-911f-4723c7c65ca5.png">
 
 DewarpNet은 두 개의 sub-network로 구성되어 있다. 
 
@@ -252,13 +257,15 @@ U-Net은 Biomedical 분야에서 이미지 분할(Image Segmentation)을 목적�
 
 U-Net은 이미지의 전반적인 컨텍스트 정보를 얻기 위한 네트워크와 정확한 지역화(Localization)를 위한 네트워크가 대칭 형태로 구성되어 있다. 
 
- ![Unet](../img/dewarpNet/dewarpNet_6.png)
+
+<img width="664" alt="dewarpNet_6" src="https://user-images.githubusercontent.com/55180768/103264768-f9fbb980-49ee-11eb-94a3-0d75117eed64.png">
 
 출처 : [https://medium.com/@msmapark2/u-net-논문-리뷰-u-net-convolutional-networks-for-biomedical-image-segmentation-456d6901b28a](https://medium.com/@msmapark2/u-net-%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0-u-net-convolutional-networks-for-biomedical-image-segmentation-456d6901b28a)
 
 **Contracting Path**
 
- ![UNet Contracting Path](../img/dewarpNet/dewarpNet_7.png)
+
+<img width="707" alt="dewarpNet_7" src="https://user-images.githubusercontent.com/55180768/103264765-f9632300-49ee-11eb-868c-f17f8bdffd22.png">
 
 출처 : [https://medium.com/@msmapark2/u-net-논문-리뷰-u-net-convolutional-networks-for-biomedical-image-segmentation-456d6901b28a](https://medium.com/@msmapark2/u-net-%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0-u-net-convolutional-networks-for-biomedical-image-segmentation-456d6901b28a)
 
@@ -267,7 +274,7 @@ Contracting Path는 일반적인 CNN을 따르며, Downsampling을 위한
 **Expanding Path**
 
 
- ![UNet Expanding Path](../img/dewarpNet/dewarpNet_8.png)
+<img width="681" alt="dewarpNet_8" src="https://user-images.githubusercontent.com/55180768/103264762-f8ca8c80-49ee-11eb-8030-aef16e584fb9.png">
 
 출처: [https://medium.com/@msmapark2/u-net-논문-리뷰-u-net-convolutional-networks-for-biomedical-image-segmentation-456d6901b28a](https://medium.com/@msmapark2/u-net-%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0-u-net-convolutional-networks-for-biomedical-image-segmentation-456d6901b28a)
 
@@ -319,14 +326,14 @@ Shape Network는 추측한 3D coordinate map C를 이용해 loss function을 opt
 
 where ∇C = ∥(∇xC,∇yC)∥2, ∇xC and ∇yC are the horizontal and vertical image gradients of C, and λ con- trols the gradient term’s influence. The image gradient helps learn high-frequency details such as ridges and valleys of C.
 
- ![](../img/dewarpNet/dewarpNet_9.png)
+<img width="273" alt="dewarpNet_9" src="https://user-images.githubusercontent.com/55180768/103264758-f831f600-49ee-11eb-9693-953708d3bb89.png">
 
- ![](../img/dewarpNet/dewarpNet_10.png)
+<img width="190" alt="dewarpNet_10" src="https://user-images.githubusercontent.com/55180768/103264777-fbc57d00-49ee-11eb-8cb8-e62e6fccc8fb.png">
 Texture mapping network 는 3D coordinate map에서 backward mapping 을 추측한다. 
 
 (Deformed document paper to flat document image) 
 
- ![](../img/dewarpNet/dewarpNet_11.png)
+<img width="260" alt="dewarpNet_11" src="https://user-images.githubusercontent.com/55180768/103264776-fb2ce680-49ee-11eb-8c0e-178ca9556612.png">
 
 B : The mapping B is a flow field representing an image deformation: each pixel (x, y) in B represents a pixel position in the input image I.
 
@@ -336,7 +343,7 @@ D : Final unwarped document image D. (Backward mapping ⇒ Bilinear sampling?)
 
 우리는 예측한 backward mapping B를 사용해 체커보드 이미지를 unwarp 하여 unwarped 된 체커보드 이미지 D 를 얻고, 체커보드 이미지 D를 이용해 Ld를 계산한다. 
 
- ![](../img/dewarpNet/dewarpNet_12.png)
+<img width="896" alt="dewarpNet_12" src="https://user-images.githubusercontent.com/55180768/103264775-fb2ce680-49ee-11eb-95b9-1366dbedf68c.png">
 
 체커보드 이미지의 목표는 document의 texture에 상관없이 Ld를 계산하기 위함이다. 
 
@@ -358,6 +365,7 @@ Joint training은 backward mapping loss가 shape network의 부족한 부분을 
 
 We apply multiple ways of data augmentation: We re- place the background of our training data with images from the Describable Texture Dataset (DTD) [7] and the KTH2b- tips dataset [6] actively during training. The intensity and color of each training image are also randomly jittered.
 
- ![](../img/dewarpNet/dewarpNet_13.png)
+
+<img width="488" alt="dewarpNet_13" src="https://user-images.githubusercontent.com/55180768/103264773-fa945000-49ee-11eb-8dc6-16c3f13b2e86.png">
 
 Some limitations exist in our work: First, the inexpen- sive depth sensor cannot capture fine details of deforma- tion like subtle creases on a paper crumple. Thus our data lacks samples with highly complex paper crumple. In fu- ture work, we plan to construct a dataset with better details and more complex structures. Second, DewarpNet is relatively sensitive to occlusion: results degrade when parts of the imaged document are occluded. In future work, we plan to address this difficulty via data augmentation and adver- sarial training.
