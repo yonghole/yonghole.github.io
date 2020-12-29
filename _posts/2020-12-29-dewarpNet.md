@@ -149,7 +149,8 @@ Training을 위해서, 우리는 DOC3D dataset을 생성했다.
     기존의 데이터셋은 2D에서만 이루어졌기 때문에, 3D 를 활용한 우리의 dataset으로 학습시킨 딥러닝 모델이 실제 이미지로 테스트를 진행하였을 때 더 좋은 결과를 낼 것이라는 점을 쉽게 추측할 수 있다. 
     
     
-    ![Doc3D dataset에서 2 개의 mesh를 이용해 생성된 이미지들](../img/dewarpNet/dewarpNet_1.png)
+    <img width="419" alt="dewarpNet_1" src="https://user-images.githubusercontent.com/55180768/103264621-95d8f580-49ee-11eb-939c-7549f194292c.png">
+
 
    ![기존의 데이터셋](../img/dewarpNet/dewarpNet_2.png)
 
