@@ -163,11 +163,11 @@ int hanoi(int plates,int src, int dst, int via){
         move(src,dst);
     }
     else{
-					int result = hanoi(plates-1, src, via, dst);
-							result += move(src, dst);
-				      result += hanoi(plates-1, via, dst, src);
+	int result = hanoi(plates-1, src, via, dst);
+	result += move(src, dst);
+	result += hanoi(plates-1, via, dst, src);
         
-				return result;
+	return result;
     }
 }
 
