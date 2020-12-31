@@ -35,6 +35,7 @@ Install  버튼을 누릅니다.
 ![Untitled 2](https://user-images.githubusercontent.com/55180768/103395629-6652f600-4b72-11eb-86a3-ee94433d1c97.png)
 
 Continue 를 누릅니다. 
+
 ![Untitled 3](https://user-images.githubusercontent.com/55180768/103395594-5c30f780-4b72-11eb-87af-b68fb85df344.png)
 
 Continue를 누르면 새로운 창이 뜨게 됩니다. 이 창에서 패키지를 선택해 설치해야 합니다. 
@@ -52,7 +53,9 @@ Continue를 누르면 새로운 창이 뜨게 됩니다. 이 창에서 패키지
 ![Untitled 6](https://user-images.githubusercontent.com/55180768/103395598-5dfabb00-4b72-11eb-974d-11bb456a8a92.png)
 
 **고급** 탭에서 **환경 변수**를 선택합니다. 
+
 ![Untitled 7](https://user-images.githubusercontent.com/55180768/103395600-5e935180-4b72-11eb-97e2-383aee9a0c1d.png)
+
 ![Untitled 8](https://user-images.githubusercontent.com/55180768/103395601-5e935180-4b72-11eb-9312-bb3ad82f469b.png)
 
 **시스템 변수**에서  **Path**를 선택하고 **편집**을 눌러주세요. 
@@ -78,11 +81,13 @@ gcc -v, g++ -v 명령어를 입력하여 버전이 출력된다면 제대로 설
 ## 빌드 설정하기
 
 다시 Visual Studio Code로 돌아옵니다. 
+
 ![Untitled 13](https://user-images.githubusercontent.com/55180768/103395606-605d1500-4b72-11eb-86af-e47fd6f07a21.png)
 
 왼쪽의 sidebar에서 가장 밑에 있는 extension 아이콘을 누르고, C/C++를 검색하여 설치합니다. 
 
 C/C++ 코드를 식별하고 명령어, 오류 등을 보기 쉽게 색으로 표시해주는 확장 프로그램입니다.
+
 ![Untitled 14](https://user-images.githubusercontent.com/55180768/103395607-605d1500-4b72-11eb-8356-ae6139c11f1c.png)
 
 다시 초기 화면으로 돌아와 Open folder를 통해 작업할 디렉토리를 열어줍니다. 
@@ -198,6 +203,7 @@ task.json 파일의 내용을 아래 내용으로 변경해주세요.
 ```
 
 이후 단축키 설정만 해주시면 모든 과정이 끝납니다. 
+
 ![Untitled 21](https://user-images.githubusercontent.com/55180768/103395615-62bf6f00-4b72-11eb-81df-e2099fe360ed.png)
 
 상단바에서 File >> Preferences >> Keyboard Shortcuts 에 들어갑니다. 
@@ -227,12 +233,15 @@ task.json 파일의 내용을 아래 내용으로 변경해주세요.
 만약 c 파일이라면 save and compile for C를 선택하시면 됩니다. 
 
 코드에 문제가 없다면 다음과 같은 내용이 출력됩니다. 
+
 ![Untitled 25](https://user-images.githubusercontent.com/55180768/103395620-63f09c00-4b72-11eb-9862-56dbc76dc1b6.png)
 
 코드에 문제가 있다면 다음처럼 오류 메세지가 출력됩니다. 
+
 ![Untitled 26](https://user-images.githubusercontent.com/55180768/103395623-64893280-4b72-11eb-9289-ca74047f8209.png)
 
 이제 컴파일된 코드에 ctrl + alt + r을 누릅니다. 
+
 ![Untitled 27](https://user-images.githubusercontent.com/55180768/103395624-6521c900-4b72-11eb-8756-8ec811e66a25.png)
 
 execute 가 뜨면 enter를 눌러줍니다. 
