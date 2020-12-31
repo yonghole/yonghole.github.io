@@ -11,6 +11,7 @@ comment : true
 Visual Studio Code 는 Microsoft 에서 만든 무료 오픈소스 코드 에디터 입니다.
 
 윈도우, 리눅스, 맥에서 모두 사용이 가능합니다. 
+
 ![Untitled](https://user-images.githubusercontent.com/55180768/103395626-65ba5f80-4b72-11eb-875f-d9ab9bdf469e.png)
 
 원래는 맥 환경에서는  xcode를, 윈도우에서는 visual studio 2019를 사용했는데, html, css를 새로 공부하려고 처음 코드 에디터를 사용하게 되었습니다. 그러던 중 간편하게  c++ 를 컴파일 할 수 있다는 점을 알게 되어 직접 시도해보았습니다. 
@@ -28,6 +29,7 @@ VS Code에는 컴파일러가 없습니다. 따라서 C / C++을 컴파일하기
 [MinGW - Minimalist GNU for Windows](https://sourceforge.net/projects/mingw/files/)
 
 다운로드한 exe 파일을 실행합니다. 
+
 ![Untitled 1](https://user-images.githubusercontent.com/55180768/103395628-65ba5f80-4b72-11eb-8fac-bfaf172f21e7.png)
 
 Install  버튼을 누릅니다. 
