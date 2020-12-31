@@ -1,5 +1,5 @@
 ---
-title: "VS Code에서 C/C++ 컴파일 환경 설정하기"
+title: "[Windows]VS Code에서 C/C++ 컴파일 환경 설정하기"
 date: 2020-12-31 14:12:13
 categories: etc
 comment : true
