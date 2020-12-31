@@ -8,6 +8,15 @@ comment : true
 
 # DewarpNet paper
 
+회사에서 인턴을 진행하면서 dewarpNet 논문에 대한 분석을 맡게 되었다. 논문이 2019년에 ICCV에서 공개된 논문이다보니 자료가 많이 없다. 
+분석이나 공부보다는 해석에 가깝긴 하지만 누군가에게는 도움이 되지 않을까 싶어 남겨놓는다. 
+
+@inproceedings{SagnikKeICCV2019, 
+Author = {Sagnik Das*, Ke Ma*, Zhixin Shu, Dimitris Samaras, Roy Shilkrot}, 
+Booktitle = {Proceedings of International Conference on Computer Vision}, 
+Title = {DewarpNet: Single-Image Document Unwarping With Stacked 3D and 2D Regression Networks}, 
+Year = {2019}}   
+
 ## 0. Abstract
 
 모바일 장치로 문서 이미지를 촬영하여 자동으로 정보를 추출하는 것은 효율적이지 않다. 
