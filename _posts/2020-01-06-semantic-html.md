@@ -1,3 +1,10 @@
+---
+title: "Semantic HTML"
+date: 2020-12-29 16:11:58
+categories: Web
+---
+
+
 # Semantic HTML
 
 HTML5 이전에는 웹 페이지의 구조를 표현하는 태그가 없었기 때문에 구조화된 페이지를 만들기 어려웠다. <div>, <table> 등의 태그를 이용해 구조화된 것처럼 표현했지만, 막상 소스를 보면 구조의 파악이 힘들었다. 
@@ -62,7 +69,7 @@ Section 과 article의 차이에 대해서는 여러 의견이 분분한 것 같
 
 본문에 삽입되는 사진, 차트, 삽화 등을 블록화 하는 시맨틱 태그이다. <figure> 태그를 통해 콘텐츠를 블록화 할 수 있다. 
 
-![Semantic%20HTML%202fad9962db9a4d11b0c1888f5c207d7f/_2021-01-06__2.43.50.png](Semantic%20HTML%202fad9962db9a4d11b0c1888f5c207d7f/_2021-01-06__2.43.50.png)
+![_2021-01-06__2 43 50](https://user-images.githubusercontent.com/55180768/103682162-d4ad1380-4fcb-11eb-9b2f-b7dc38804ad4.png)
 
 **Details & Summary**
 
@@ -72,13 +79,13 @@ Summary 에는 제목이, details에는 제목을 눌렀을 때 나타날 내용
 
 ---
 
-![Semantic%20HTML%202fad9962db9a4d11b0c1888f5c207d7f/_2021-01-06__2.45.57.png](Semantic%20HTML%202fad9962db9a4d11b0c1888f5c207d7f/_2021-01-06__2.45.57.png)
+![_2021-01-06__2 45 57](https://user-images.githubusercontent.com/55180768/103682177-d8409a80-4fcb-11eb-8e9d-06b15748be18.png)
 
 확장 전 
 
 ---
 
-![Semantic%20HTML%202fad9962db9a4d11b0c1888f5c207d7f/_2021-01-06__2.46.14.png](Semantic%20HTML%202fad9962db9a4d11b0c1888f5c207d7f/_2021-01-06__2.46.14.png)
+![_2021-01-06__2 46 14](https://user-images.githubusercontent.com/55180768/103682178-d8409a80-4fcb-11eb-93cb-fd04d349c845.png)
 
 확장 후 
 
@@ -91,6 +98,6 @@ Summary 에는 제목이, details에는 제목을 눌렀을 때 나타날 내용
 - meter
 - progress
 
-![Semantic%20HTML%202fad9962db9a4d11b0c1888f5c207d7f/_2021-01-06__2.52.23.png](Semantic%20HTML%202fad9962db9a4d11b0c1888f5c207d7f/_2021-01-06__2.52.23.png)
+![_2021-01-06__2 51 36](https://user-images.githubusercontent.com/55180768/103682179-d8d93100-4fcb-11eb-9f1e-3c2748ee8973.png)
 
-![Semantic%20HTML%202fad9962db9a4d11b0c1888f5c207d7f/_2021-01-06__2.51.36.png](Semantic%20HTML%202fad9962db9a4d11b0c1888f5c207d7f/_2021-01-06__2.51.36.png)
+![_2021-01-06__2 52 23](https://user-images.githubusercontent.com/55180768/103682180-da0a5e00-4fcb-11eb-8e7d-ab43161d8c7c.png)
