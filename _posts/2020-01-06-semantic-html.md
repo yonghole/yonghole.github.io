@@ -19,19 +19,19 @@ Semantic HTML의 활용 예로, 애플의 watchOS는 article 태그를 이용해
 
 ### Header
 
-<header> 태그는 페이지나 섹션의 머리말을 표현하는 태그이다. 보통 페이지 제목, 페이지를 소개하는 간단한 설명이 들어간다. 
+header 태그는 페이지나 섹션의 머리말을 표현하는 태그이다. 보통 페이지 제목, 페이지를 소개하는 간단한 설명이 들어간다. 
 
 ### Nav
 
-<nav> 태그는 하이퍼링크들을 모아 놓은 특별한 섹션이다. 페이지 내의 목차를 위해 사용한다. 
+nav 태그는 하이퍼링크들을 모아 놓은 특별한 섹션이다. 페이지 내의 목차를 위해 사용한다. 
 
 ### Section
 
-<section> 태그는 문서의 chapter 역할을 한다. 일반적인 문서에 여러 장이 있는 것처럼 웹페이지에도 여러 section을 둘 수 있다. <section> 에는 heading tag로 section의 주제를 기재한다. 
+section 태그는 문서의 chapter 역할을 한다. 일반적인 문서에 여러 장이 있는 것처럼 웹페이지에도 여러 section을 둘 수 있다. <section> 에는 heading tag로 section의 주제를 기재한다. 
 
 ### Article
 
-<article> 태그는 독립적인 내용을 담는데 사용한다. article에 담을 내용이 많은 경우 여러 개의 section에 나누어 담을 수 있다. 
+article 태그는 독립적인 내용을 담는데 사용한다. article에 담을 내용이 많은 경우 여러 개의 section에 나누어 담을 수 있다. 
 
 ### Section vs Article
 
