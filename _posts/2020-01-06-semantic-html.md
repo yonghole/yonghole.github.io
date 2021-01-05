@@ -37,7 +37,7 @@ Semantic HTML의 활용 예로, 애플의 watchOS는 article 태그를 이용해
 
 Section 과 article의 차이에 대해서는 여러 의견이 분분한 것 같다. 처음에는 section 안에 article 들을 넣는 것만 가능한 줄 알았다. 예를 들어, 
 
-```html
+```cpp
 <section>
 	<article>
 			<h3> Article 1 </h3>
@@ -57,7 +57,7 @@ Section 과 article의 차이에 대해서는 여러 의견이 분분한 것 같
 
 ### Aside
 
-사이드 바 역할을 하는 태그이다. 문서의 주요 흐름이나 부분에서 벗어난 내용을 담고, 오쪼ㅛㄱ이나 왼쪽에 주로 배치한다. 
+사이드 바 역할을 하는 태그이다. 문서의 주요 흐름이나 부분에서 벗어난 내용을 담고, 오른쪽이나 왼쪽에 주로 배치한다. 
 
 ### Footer
 
