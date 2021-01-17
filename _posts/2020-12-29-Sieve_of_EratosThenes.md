@@ -56,9 +56,9 @@ for(int i=num1; i<= num2; i++){
 
 어떤 수가 소수가 아니라면, 두 수의 곱으로 나타낼 수 있다. 
 
-$n = a * b$
+n = a * b
 
-이 때, $sqrt(n) * sqrt(n) = n$ 이기 때문에 a 와 b 는 동시에 sqrt(n)보다 클 수 없다. 
+이 때, sqrt(n) * sqrt(n) = n 이기 때문에 a 와 b 는 동시에 sqrt(n)보다 클 수 없다. 
 
 즉, 둘 중 하나는 반드시 sqrt(n) 보다 작다. 
 
