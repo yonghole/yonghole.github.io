@@ -325,3 +325,7 @@ Custom Cell이 우리의 의도대로 적용된 것을 확인할 수 있습니�
 
 다음 포스팅에서는 우리의 custom cell에 데이터를 담는 방법을 알아보겠습니다.
 
+
+Reference : 
+[네이버 부스트코스 > iOS 앱 프로그래밍](https://www.boostcourse.org/mo326/joinLectures/12966)
+[Apple Developer Documentation](https://developer.apple.com/documentation/)
