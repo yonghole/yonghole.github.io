@@ -1,10 +1,10 @@
 ---
-title: "TableView를 이용한 iOS 앱 만들기 실습"
+title: "TableView를 이용한 iOS 앱 만들기 실습(Part1)"
 date: 2021-02-09 01:35:08
 categories: iOS
 ---
 
-# TableView를 이용한 앱 만들기 실습
+## Auto Layout을 통해 View를 구성하고 Custom cell을 사용하는 TableView 정의하기
 
 ![_2021-02-06__10 57 41](https://user-images.githubusercontent.com/55180768/107250510-466af800-6a77-11eb-93e4-174c3c50e0fa.png)
 
