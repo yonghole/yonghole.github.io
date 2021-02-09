@@ -1,0 +1,159 @@
+# 2020 Kakao BLIND Recruitment
+
+## 문자열압축
+
+![2020%20Kakao%20BLIND%20Recruitment%2087c437fa56a7406fad4a22a04510127b/_2021-02-06__7.20.33.png](2020%20Kakao%20BLIND%20Recruitment%2087c437fa56a7406fad4a22a04510127b/_2021-02-06__7.20.33.png)
+
+![2020%20Kakao%20BLIND%20Recruitment%2087c437fa56a7406fad4a22a04510127b/_2021-02-06__7.20.46.png](2020%20Kakao%20BLIND%20Recruitment%2087c437fa56a7406fad4a22a04510127b/_2021-02-06__7.20.46.png)
+
+처음에는 문제를 잘못 이해해 현재 자신의 위치부터 몇 자리 뒤까지 확인해 반복되는지를 확인하는...그런 복잡한 생각을 하고 구현하고 있었다. 
+
+주어진 문자열을 몇 자리로 잘랐을 때 가장 짧게 압축할 수 있는지를 물어보는 문제이다. 
+
+주어진 aabbaccc를 1개 단위로 자를 경우 
+
+1. a/a/b/b/a/c/c/c/ 
+2. a 가 두 번 반복 ⇒ 2a
+3. b 가 두 번 반복 ⇒ 2b
+4. a ≠ c
+5. c 가 세 번 반복 ⇒ 3c
+
+따라서 2a2ba3c ⇒ 7자리가 된다. 
+
+2개 단위로 자르는 경우에는
+
+1. aa / bb / ac / cc
+
+이기 때문에 반복되는 문자열이 없어 압축되지 않는다. 
+
+우선 큰 틀부터 고민했다. 1개 단위부터 문자열의 사이즈 단위까지 반복해야 하는데, 문자열의 사이즈 단위로 자르는 것은 아무것도 하지 않는 것과 동일하기 때문에 고려하지 않았다. 
+
+for 문을 이용해 단위의 반복을 만들어주었다. 
+
+압축이 되지 않는 경우가 최악의 경우이기 때문에 answer 변수는 입력으로 주어지는 문자열 s의 길이로 하였다. 
+
+각 단위의 반복마다 문자열의 맨 처음부터 시작해야 하기 때문에 idx는 0부터 시작하도록 했고, 부분문자열의 반복을 확인할 변수 count도 1로 초기화 하였다. 
+
+그리고, 문자열을 처음부터 끝까지 1개 단위부터 시작해 문자열의 끝까지 검사하도록 while문을 걸어주었다. 
+
+while문은 무한 루프이고, 종료 조건은 아직 검사하지 않은 문자열의 길이가 현재의 단위보다 작은 경우이다. 
+
+문자열의 검사는, 두 개의 string을 가지고 또 하나의 while문을 통해 진행된다. 
+
+또한, 문자열 반복 체크 파트와 정답 string 생성 파트로 나누어 진행된다. 
+
+### 1. 문자열 반복 체크 파트
+
+string first는 현재 위치에서 단위만큼 문자열을 자른 부분 문자열이고, 
+
+string second는 자른 위치에서 단위만큼 다시 자른 부분 문자열이다. 
+
+만약 first 와 second가 같다면 count를 증가시키고 검사할 위치를 옮기고 (idx += x)
+
+만약 first와 second가 다르다면 while문을 탈출한다. 
+
+first와 second가 같을 때까지 반복한다. 
+
+>> 추가 : 블로그 글을 작성하다가 발견한 것인데, 
+
+```cpp
+second = s.substr(idx+x,x);
+```
+
+이 부분이 왜 오류가 나지 않았는지 궁금해졌다. 
+
+substr 함수는 pos 자리가 범위를 벗어나면 exception을 반환 하는 것으로 알고 있었는데..
+
+"aaaaaa"와 x=3 인 경우를 보면, aaa /aaa 이 같아서 한 번 빠지고 두 번째 반복에서 
+
+```swift
+first = s.substr(3,3);
+second = s.substr(6,3);
+```
+
+이기 때문에 예외가 나야 하는 것 아닌가 싶었다. 
+
+그런데 조금 더 자세히 알아보니..
+
+![2020%20Kakao%20BLIND%20Recruitment%2087c437fa56a7406fad4a22a04510127b/_2021-02-10__12.58.48.png](2020%20Kakao%20BLIND%20Recruitment%2087c437fa56a7406fad4a22a04510127b/_2021-02-10__12.58.48.png)
+
+출처 : [https://stackoverflow.com/questions/57360180/stdstringsubstr-is-exception-safe](https://stackoverflow.com/questions/57360180/stdstringsubstr-is-exception-safe)
+
+운이 좋아 오류는 나지 않았지만 모르고 맞은 코드였다. 상당히 유용한 함수인만큼 잘 알아두어야 겠다. 
+
+### 2. 정답 문자열 생성 파트
+
+count 로 잘린 문자열이 몇 번 반복되었는지를 확인했다. 
+
+따라서 정답 문자열에는 
+
+1. 반복되지 않은 경우 (0≤count≤1)
+
+    정답 문자열 string에 count를 제외하고 더해준다. 
+
+2. 반복된 경우
+
+    정답 문자열에 count  + string을 더해준다. 
+
+count 를 더할 때는 to_string() 함수를 사용한다. 
+
+```cpp
+#include <string>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int solution(string s) {
+    int answer = s.size();
+    int ssize = s.size();
+ 
+   	for(int x=1;x<ssize;x++){
+        int idx=0;
+				bool flag = true;
+        // count is for checking iteration
+        int count = 1;
+        string tmp;
+        // start case with x
+        while(1){
+            if(ssize-idx < x){
+                tmp += s.substr(idx,x);
+                break;
+            }
+            else{
+                // while iteration of same string
+                string first, second;
+                while(flag){
+           			 first = s.substr(idx,x);
+            		 second = s.substr(idx+x,x);
+           		 	 if(first == second){
+              		 	count ++;
+	            		 	idx+=x;
+          		  	 }
+          		  	 else{
+          		     	break;
+          		  	 }
+       		 	}
+                // if count > 1, 'count' + 'string'
+       		 	if(count > 1){
+                    tmp += to_string(count);
+                    tmp += first;
+                    count = 1;
+     		   	}
+      		  	else{ // else put 'string'
+                  tmp += first;
+                  
+     		   	}   
+                idx += x;
+       		}	
+            
+        }
+        //compare check with answer
+        if(tmp.size() < answer){
+            answer = tmp.size();
+        }
+    }	
+    
+    return answer;
+}
+```
