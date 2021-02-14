@@ -201,7 +201,7 @@ Identifier에는 우리가 미리 설정했던 Reuse Identifier를 적어줍니�
 
 Custom Cell이 우리의 의도대로 적용된 것을 확인할 수 있습니다.
 
-다음 포스팅에서는 우리의 custom cell에 데이터를 담는 방법을 알아보겠습니다.
+[다음 포스팅](https://yonghole.github.io/ios/iosTableViewPart3/)에서는 우리의 custom cell에 데이터를 담는 방법을 알아보겠습니다.
 
 
 Reference : 
