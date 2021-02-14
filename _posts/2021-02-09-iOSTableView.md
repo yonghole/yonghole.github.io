@@ -6,6 +6,8 @@ categories: iOS
 
 ## Auto Layout을 통해 View를 구성하고 Custom cell을 사용하는 TableView 정의하기
 
+### iOS TableView를 이용한 앱 만들기 실습
+
 [1. Auto Layout을 통해 View를 구성하고 Custom cell을 사용하는 TableView 정의하기](https://yonghole.github.io/ios/iOSTableView/)
 
 [2. StoryBoard와 ViewController를 정의하고 DataSource, Delegate 설정하기](https://yonghole.github.io/ios/iosTableViewPart2/)
