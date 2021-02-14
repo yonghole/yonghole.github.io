@@ -4,7 +4,15 @@ date: 2021-02-15 01:35:08
 categories: iOS
 ---
 
-## 2. 스토리보드와 ViewController 연결하기
+##  스토리보드와 ViewController 연결하기
+
+### iOS TableView를 이용한 앱 만들기 실습
+
+[1. Auto Layout을 통해 View를 구성하고 Custom cell을 사용하는 TableView 정의하기](https://yonghole.github.io/ios/iOSTableView/)
+
+[2. StoryBoard와 ViewController를 정의하고 DataSource, Delegate 설정하기](https://yonghole.github.io/ios/iosTableViewPart2/)
+
+[3. Custom cell에 데이터 담아 TableView를 통해 보여주기](https://yonghole.github.io/ios/iosTableViewPart3/)
 
 MVC 디자인 패턴에 따라 DataSource는 Model 역할을 맡습니다. DataSource는 TableView를 생성하고 수정하는데 필요한 정보를 제공합니다. DataSource는 UITableView 객체에 섹션의 수와 행의 수를 알려줍니다. UITableViewDataSource의 필수 메서드는 다음과 같습니다. 
 
