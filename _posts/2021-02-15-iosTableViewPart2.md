@@ -1,6 +1,6 @@
 ---
 title: "TableView를 이용한 iOS 앱 만들기 실습(Part2)"
-date: 2021-02-09 01:35:08
+date: 2021-02-15 01:35:08
 categories: iOS
 ---
 
