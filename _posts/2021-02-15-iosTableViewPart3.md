@@ -4,9 +4,16 @@ date: 2021-02-15 03:35:58
 categories: iOS
 ---
 
-# TableView를 이용한 앱 만들기 실습 3
 
 ## Custom Cell에 data를 담기
+
+### iOS TableView를 이용한 앱 만들기 실습
+
+[1. Auto Layout을 통해 View를 구성하고 Custom cell을 사용하는 TableView 정의하기](https://yonghole.github.io/ios/iOSTableView/)
+
+[2. StoryBoard와 ViewController를 정의하고 DataSource, Delegate 설정하기](https://yonghole.github.io/ios/iosTableViewPart2/)
+
+[3. Custom cell에 데이터 담아 TableView를 통해 보여주기](https://yonghole.github.io/ios/iosTableViewPart3/)
 
 지난 포스트에서는 TableView를 이용하고, custom cell을 사용하도록 하는 것을 알아보았습니다. 
 
