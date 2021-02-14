@@ -127,9 +127,9 @@ Table View Cell 내에서 컴포넌트들의 Auto Layout 설정은 다음과 같
 하나도 반영되어 있지 않습니다. UITableView는 DataSource와 Delegate가 없다면 동작할 수 없기 때문입니다. 
 
 
-다음 포스팅에서는 StoryBoard와 ViewController를 연결하고, DataSource와 Delegate를 설정해주겠습니다. 
+[다음 포스팅](https://yonghole.github.io/ios/iosTableViewPart2/)에서는 StoryBoard와 ViewController를 연결하고, DataSource와 Delegate를 설정해주겠습니다. 
 
-[다음 포스팅](https://yonghole.github.io/ios/iosTableViewPart2/)
+
 
 
 Reference : 
