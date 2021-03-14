@@ -44,4 +44,6 @@ git remote add origin [자신의 레포지토리 주소]
 
 프로젝트가 잘 올라간 것을 확인할 수 있다. 
 
+<img width="587" alt="스크린샷 2021-03-14 오후 3 48 03" src="https://user-images.githubusercontent.com/55180768/111059946-acb2c280-84dc-11eb-8a1e-91d0da67c8d6.png">
+
 
