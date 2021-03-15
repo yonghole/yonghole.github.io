@@ -1,0 +1,64 @@
+# 데이터베이스 강의 1 : Introduction
+
+## DBMS
+
+DBMS 시스템은 효율적이고, 신뢰할 수 있고, 편리하고, 여러 사용자가 이용하기에 안전한, 막대한 양의 지속적인 데이터가 접근 가능한 저장공간을 제공해준다. 
+
+DB에 접근할 수 있는 인터페이스를 만드는 것이다. 
+
+- Massive
+- Persistent
+- Safe
+    - h/w, s/w, power, users → 안정적으로 사용할 수 있어야 한다.
+- Multi-user
+    - concurrency control → 수천 명, 수 만명이 사용해야 한다.
+- Convenient
+    - Physical data independence → conceptual과 분리한다.
+    - high-level languages
+- Efficient
+    - thouand of queries/updates per second
+- Reliable
+    - 99.9999%
+
+Database application들은 "frameworks" 를 통해 프로그램 되어 진다.
+
+DBMS는 middleware와 결합되어 사용된다.
+
+Data-intensive application 들은 DBMS를 전혀 사용하지 않을 수도 있다.
+
+### Key concepts
+
+- Data model
+    - DB의 content를 구성하는 요소들을 정의한다.
+    - DB 안에 데이터를 집어넣을 때 정리가 되어서 집어넣어야 한다.
+    - ex - Set of records, XML, Graph
+- Schema versus data
+    - Schema → Types
+    - Data → Variables
+    - Data Definition Language (DDL)
+        - Set up Schema
+        - 데이터를 집어넣기 위한 테이블을 구성하는 언어이다.
+        - Table 의 구조를 짜는 것을 하는 언어
+        - Table을 만든다.
+    - Data Manipulation or query Language (DML)
+        - Querying and Modifying
+        - 데이터의 추가 / 삭제
+
+DDL을 이용해 만들어진 Table에  DML을 이용해 데이터를 추가, 삭제 편집 등을 한다. 
+
+![%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B4%201%20Introduction%20ddbe6eed11894d90b1c6a28b75082407/Untitled.png](%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B4%201%20Introduction%20ddbe6eed11894d90b1c6a28b75082407/Untitled.png)
+
+노란 부분이 Schema, 파란 부분이 Data이다. 
+
+### Key people
+
+- DBMS implementer
+    - DBMS 자체를 개발하는 사람
+    - Builds system(Oracle, MS, MySQL, PostgreSQL, SQLite
+- Database designer
+    - Establishes schema
+- Database application developer
+    - Programs that operate on database
+- Database administrator
+    - Loads data
+    - 데이터베이스에 실제 데이터를 업로드하고 수정 삭제하는 사람
