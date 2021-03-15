@@ -1,3 +1,8 @@
+---
+title: "[데이터베이스] 데이터 베이스 강의 2: Relational Databases "
+date: 2021-03-16 04:19:02
+categories: Database
+---
 # 데이터베이스 강의2: The Relational Model
 
 ## The Relational Model
@@ -22,7 +27,8 @@ wr: modify (insert,delete,update)
 
         String, int, etc...
 
-![%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B42%20The%20Relational%20Model%20ff6665ec606c47958c5980725f9ce3d1/Untitled.png](%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B42%20The%20Relational%20Model%20ff6665ec606c47958c5980725f9ce3d1/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/55180768/111209017-d10ebc00-860e-11eb-8501-6ef227d83d78.png)
+
 
 - NULL - special value for "unknown" or "undefined"
     - undefined : 해당 값을 정의할 수 없음. 정의 할 수 없는 경우가 어색하지 않다.
@@ -33,7 +39,7 @@ wr: modify (insert,delete,update)
     - Tuple이 모든 attribute에서 값이 다른 경우(의 key)를 이야기한다.
     - 예를 들어, 위의 Student table에서 ID와 name을 골랐을 때 중복되는 tuple이 존재하지 않는다면 (ID,name)은 Key가 된다.
 
-    ![%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B42%20The%20Relational%20Model%20ff6665ec606c47958c5980725f9ce3d1/Untitled%201.png](%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%20%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B42%20The%20Relational%20Model%20ff6665ec606c47958c5980725f9ce3d1/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/55180768/111209022-d2d87f80-860e-11eb-84ee-c1e200b3fee1.png)
 
     - 하지만 만약  다음과 같은 상황이라면 ID,name을 골랐을 때 중복되는 tuple이 생기기 때문에 Key가 될 수 없다.
     - 위 테이블에서 ID와 name 이 중복되어도, (ID,name,GPA) 까지 선택한다면 unique한 tuple이 되기 때문에 (ID,name,GPA)는 Key가 된다.
