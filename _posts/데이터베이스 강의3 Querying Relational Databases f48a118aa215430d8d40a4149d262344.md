@@ -1,3 +1,8 @@
+---
+title: "[데이터베이스] 데이터 베이스 강의 3: Querying Relational Databases "
+date: 2021-03-16 04:33:02
+categories: Database
+---
 # 데이터베이스 강의3: Querying Relational Databases
 
 ### Steps in creating and using a (relational) database
