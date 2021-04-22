@@ -5,7 +5,7 @@ categories: Algorithm
 ---
 # 프로그래머스 단어 변환
 
-문제 출처 : ![문제출처-프로그래머스_단어_변환](https://programmers.co.kr/learn/courses/30/lessons/43163)
+문제 출처 : [문제출처-프로그래머스_단어_변환](https://programmers.co.kr/learn/courses/30/lessons/43163)
 
 ![_2021-04-22__11 44 22](https://user-images.githubusercontent.com/55180768/115747400-3012de00-a3d0-11eb-8352-10e32eb9f2b6.png)
 
